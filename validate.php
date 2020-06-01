@@ -6,10 +6,4 @@
         $inarray = in_array($domain, $providers);
         return (filter_var($email, FILTER_VALIDATE_EMAIL) && checkdnsrr($domain) != false && $inarray);
     }
-    
-    if(isValid("root@gmail.com")){
-      echo "This is a valid email";
-    } else {
-      echo "Please enter a valid email";
-    }
 ?>
